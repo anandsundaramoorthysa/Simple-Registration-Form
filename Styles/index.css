@@ -1,0 +1,221 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 150px; 
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 100%; 
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Form header styling */
+form h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 22px;
+    color: #444;
+    margin: 30px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Form elements styling */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Checkbox styling */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.checkbox-group label {
+    padding-left: 12px;
+    margin-top: -25px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+/* Button styling */
+button {
+    display: block; 
+    margin: 20px auto;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button:focus {
+    outline: 2px solid #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+    .container {
+        width: 95%; 
+        padding: 20px;
+    }
+
+    form h2 {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Optional form layout adjustments for larger forms */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.row .col-half {
+    flex: 1 1 calc(50% - 10px);
+}
+
+.row .col-full {
+    flex: 1 1 100%;
+}
+
+@media (max-width: 600px) {
+    .row .col-half {
+        flex: 1 1 100%; 
+    }
+}
+
+/* Additional responsive adjustments */
+.checkbox-group {
+    margin: 1rem 0; 
+}
+
+.checkbox-group label {
+    margin-left: 0.5rem; 
+    font-size: 1rem; 
+}
+
+.section-heading {
+    font-size: 24px; 
+    color: #333; 
+    margin: 20px 0;
+    padding: 10px; 
+    background-color: #e2e6ea;
+    border-left: 5px solid black; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Additional media queries for smaller screens */
+@media (max-width: 480px) {
+    body {
+        padding: 0 5px; 
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    form h2 {
+        font-size: 20px;
+    }
+    .section-title {
+        font-size: 18px;
+    }
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        padding: 0;
+    }
+    .container {
+        width: 100%; 
+        padding: 5px;
+    }
+    form h2 {
+        font-size: 18px;
+    }
+    .section-title {
+        font-size: 16px;
+    }
+    button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

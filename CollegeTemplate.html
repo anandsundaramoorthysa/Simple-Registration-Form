@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Application Received</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .email-container {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #0056b3;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #777;
+            text-align: center;
+        }
+
+        img {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .email-container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            th,
+            td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <img src="https://ambico.mx/wp-content/uploads/2023/06/Logo-ABC_finalAlta-01-jpg.jpg" alt="ABC Logo">
+        <h1>New Application Received</h1>
+
+        <div class="section">
+            <h2>Applicant Information</h2>
+            <table>
+                <tr>
+                    <th>Name of the Applicant (English):</th>
+                    <td>{{name_english}}</td>
+                </tr>
+                <tr>
+                    <th>Name of the Applicant (Tamil):</th>
+                    <td>{{name_tamil}}</td>
+                </tr>
+                <tr>
+                    <th>Date of Birth:</th>
+                    <td>{{dob}}</td>
+                </tr>
+                <tr>
+                    <th>Gender:</th>
+                    <td>{{gender}}</td>
+                </tr>
+                <tr>
+                    <th>Blood Group:</th>
+                    <td>{{blood_group}}</td>
+                </tr>
+                <tr>
+                    <th>Community:</th>
+                    <td>{{community}}</td>
+                </tr>
+                <tr>
+                    <th>Religion:</th>
+                    <td>{{religion}}</td>
+                </tr>
+                <tr>
+                    <th>Dalit Catholic / SC Converted Catholic:</th>
+                    <td>{{dalit_catholic}}</td>
+                </tr>
+                <tr>
+                    <th>Nationality:</th>
+                    <td>{{nationality}}</td>
+                </tr>
+                <tr>
+                    <th>Mother Tongue:</th>
+                    <td>{{mother_tongue}}</td>
+                </tr>
+                <tr>
+                    <th>Differently Abled:</th>
+                    <td>{{differently_abled}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Parent Details</h2>
+            <table>
+                <tr>
+                    <th>Father's Name:</th>
+                    <td>{{father_name}}</td>
+                </tr>
+                <tr>
+                    <th>Father's Education:</th>
+                    <td>{{father_education}}</td>
+                </tr>
+                <tr>
+                    <th>Father's Occupation:</th>
+                    <td>{{father_occupation}}</td>
+                </tr>
+                <tr>
+                    <th>Father's Income:</th>
+                    <td>{{father_income}}</td>
+                </tr>
+                <tr>
+                    <th>Mother's Name:</th>
+                    <td>{{mother_name}}</td>
+                </tr>
+                <tr>
+                    <th>Mother's Education:</th>
+                    <td>{{mother_education}}</td>
+                </tr>
+                <tr>
+                    <th>Mother's Occupation:</th>
+                    <td>{{mother_occupation}}</td>
+                </tr>
+                <tr>
+                    <th>Mother's Income:</th>
+                    <td>{{mother_income}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Educational Details</h2>
+            <table>
+                <tr>
+                    <th>Course Applied for:</th>
+                    <td>{{course_applied}}</td>
+                </tr>
+                <tr>
+                    <th>First Generation Graduate in Family:</th>
+                    <td>{{first_graduate}}</td>
+                </tr>
+                <tr>
+                    <th>Medium of Instruction in +2:</th>
+                    <td>{{medium_of_instruction}}</td>
+                </tr>
+                <tr>
+                    <th>Name of the School Last Studied:</th>
+                    <td>{{school_last_studied}}</td>
+                </tr>
+                <tr>
+                    <th>Board of Examination Passed:</th>
+                    <td>{{board_examination}}</td>
+                </tr>
+                <tr>
+                    <th>Year of Passing:</th>
+                    <td>{{year_of_passing}}</td>
+                </tr>
+                <tr>
+                    <th>Exam Registration No:</th>
+                    <td>{{exam_reg_no}}</td>
+                </tr>
+                <tr>
+                    <th>12th Subject Marks:</th>
+                    <td>
+                        Language I: {{language1_marks}}<br>
+                        Language II: {{language2_marks}}<br>
+                        Subject 1: {{subject1_marks}}<br>
+                        Subject 2: {{subject2_marks}}<br>
+                        Subject 3: {{subject3_marks}}<br>
+                        Subject 4: {{subject4_marks}}<br>
+                        Total Marks Obtained: {{total_marks}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Contact Information</h2>
+            <table>
+                <tr>
+                    <th>Address for Communication:</th>
+                    <td>{{address_communication}}, Pincode: {{pincode}}</td>
+                </tr>
+                <tr>
+                    <th>Student's Mobile No:</th>
+                    <td>{{student_mobile}}</td>
+                </tr>
+                <tr>
+                    <th>Parent's Mobile No:</th>
+                    <td>{{parent_mobile}}</td>
+                </tr>
+                <tr>
+                    <th>Student's Email ID:</th>
+                    <td>{{student_email}}</td>
+                </tr>
+                <tr>
+                    <th>Parent's Email ID:</th>
+                    <td>{{parent_email}}</td>
+                </tr>
+                <tr>
+                    <th>Hostel Accommodation Required:</th>
+                    <td>{{hostel_required}}</td>
+                </tr>
+                <tr>
+                    <th>Travel to College by Bus:</th>
+                    <td>{{college_bus}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>Please review the application for further processing.</p>
+            <p>Thank you!</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    <link rel="stylesheet" href="Styles/index.css">
+</head>
+
+<body>
+    <form id="contactForm">
+        <!-- Personal Information -->
+        <label class="section-heading">Personal Information</label>
+
+        <label for="name_english">Name of the Applicant (English):</label>
+        <input type="text" id="name_english" name="name_english" placeholder="John Doe" required><br><br>
+
+        <label for="name_tamil">Name of the Applicant (Tamil):</label>
+        <input type="text" id="name_tamil" name="name_tamil" placeholder="ஜான் டோ"><br><br>
+
+        <label for="course_applied">Course Applied For:</label>
+        <select id="course_applied" name="course_applied" required>
+            <option value="" disabled selected>Please choose a course</option>
+            <option value="BA Tamil">B.A. Tamil</option>
+            <option value="BA English">B.A. English</option>
+            <option value="B.Com">B.Com</option>
+            <option value="B.Sc Physics">B.Sc Physics</option>
+            <option value="B.Sc Chemistry">B.Sc Chemistry</option>
+            <option value="B.Sc Computer Science">B.Sc Computer Science</option>
+            <option value="B.Sc Maths">B.Sc Maths</option>
+            <option value="B.Com Acc & Finance">B.Com (Accounting & Finance)</option>
+            <option value="BCA">B.C.A.</option>
+            <option value="BBA">B.B.A.</option>
+        </select><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option disabled selected>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="blood_group">Blood Group:</label>
+        <select id="blood_group" name="blood_group" required>
+            <option value="" disabled selected>Select your blood group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+        <br><br>
+
+        <label for="community">Community (As in T.C.):</label>
+        <select id="community" name="community" required>
+            <option disabled selected>Select your community</option>
+            <option value="OC">OC</option>
+            <option value="BC">BC</option>
+            <option value="MBC">MBC</option>
+            <option value="DNC">DNC</option>
+            <option value="SC">SC</option>
+            <option value="SCA">SCA</option>
+            <option value="ST">ST</option>
+        </select><br><br>
+
+
+        <label for="religion">Religion:</label>
+        <select id="religion" name="religion" required>
+            <option disabled selected>Select your Religion</option>
+            <option value="Roman Catholic">Roman Catholic</option>
+            <option value="Christian">Christian</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="dalit_catholic">Dalit Catholic / SC Converted Catholic:</label>
+        <select id="dalit_catholic" name="dalit_catholic" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="nationality">Nationality:</label>
+        <select id="nationality" name="nationality" required>
+            <option value="" disabled selected>Select your nationality</option>
+            <option value="Indian">Indian</option>
+            <option value="NRI/Foreigner">NRI / Foreigner</option>
+        </select><br><br>
+
+        <label for="mother_tongue">Mother Tongue:</label>
+        <input type="text" id="mother_tongue" name="mother_tongue" placeholder="Tamil" required><br><br>
+
+        <label for="differently_abled">Differently Abled:</label>
+        <select id="differently_abled" name="differently_abled" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <!-- Parent/Guardian Information -->
+        <label class="section-heading">Parent / Guardian Information</label>
+
+        <label for="parent_name">Father Details:</label>
+        <label for="father_name">Name:</label>
+        <input type="text" id="father_name" name="father_name" placeholder="Robert Doe" required><br><br>
+
+        <label for="father_education">Education:</label>
+        <input type="text" id="father_education" name="father_education" placeholder="Bachelor's Degree"
+            required><br><br>
+
+        <label for="father_occupation">Occupation:</label>
+        <input type="text" id="father_occupation" name="father_occupation" placeholder="Teacher" required><br><br>
+
+        <label for="father_income">Annual Income:</label>
+        <input type="text" id="father_income" name="father_income" placeholder="500000" required><br><br>
+
+        <label for="parent_details_mother">Mother Details:</label>
+        <label for="mother_name">Name:</label>
+        <input type="text" id="mother_name" name="mother_name" placeholder="Jane Doe" required><br><br>
+
+        <label for="mother_education">Education:</label>
+        <input type="text" id="mother_education" name="mother_education" placeholder="Master's Degree" required><br><br>
+
+        <label for="mother_occupation">Occupation:</label>
+        <input type="text" id="mother_occupation" name="mother_occupation" placeholder="Engineer" required><br><br>
+
+        <label for="mother_income">Annual Income:</label>
+        <input type="text" id="mother_income" name="mother_income" placeholder="600000" required><br><br>
+
+        <!-- Academic Details -->
+        <label class="section-heading">Academic Details</label>
+
+        <label for="first_graduate">If you are the First Generation Graduate in the family?</label>
+        <select id="first_graduate" name="first_graduate" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="medium_of_instruction">Medium of Instruction in +2:</label>
+        <select id="medium_of_instruction" name="medium_of_instruction" required>
+            <option value="" disabled selected>Select your medium</option>
+            <option value="Tamil">Tamil</option>
+            <option value="English">English</option>
+        </select><br><br>
+
+
+        <label for="school_last_studied">Name of the School last studied:</label>
+        <input type="text" id="school_last_studied" name="school_last_studied" placeholder="ABC High School"
+            required><br><br>
+
+        <label for="boardExamination">Board of Examination:</label>
+        <select id="boardExamination" name="boardExamination" required>
+            <option disabled selected>Please select your board</option>
+            <option value="HSC">HSC</option>
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="Other">Other Board / State</option>
+        </select>
+        <br><br>
+
+        <label for="yearOfPassing">Year of Passing:</label>
+        <input type="number" id="yearOfPassing" name="yearOfPassing" placeholder="2025" required>
+        <br><br>
+
+        <label for="examRegNo">Exam Registration No:</label>
+        <input type="text" id="examRegNo" name="examRegNo" required>
+        <br><br>
+
+        <label for="subjectMarks">12th Subject Marks:</label><br>
+        <label for="language1">Language I:</label>
+        <input type="number" id="language1" name="language1" placeholder="90" min="0" max="100" required><br>
+        <label for="language2">Language II:</label>
+        <input type="number" id="language2" name="language2" placeholder="90" min="0" max="100" required><br>
+        <label for="subject1">Subject 1:</label>
+        <input type="number" id="subject1" name="subject1" placeholder="90" min="0" max="100" required><br>
+        <label for="subject2">Subject 2:</label>
+        <input type="number" id="subject2" name="subject2" placeholder="90" min="0" max="100" required><br>
+        <label for="subject3">Subject 3:</label>
+        <input type="number" id="subject3" name="subject3" placeholder="90" min="0" max="100" required><br>
+        <label for="subject4">Subject 4:</label>
+        <input type="number" id="subject4" name="subject4" placeholder="90" min="0" max="100" required><br>
+        <label for="totalMarks">Total Marks Obtained:</label>
+        <input type="number" id="totalMarks" name="totalMarks" min="0" placeholder="580" max="600" required>
+        <br><br>
+
+        <!-- Contact Details -->
+        <label class="section-heading">Contact Details</label>
+
+        <label for="addressCommunication">Address for Communication:</label><br>
+        <textarea id="addressCommunication" name="addressCommunication" rows="4" cols="50"
+            placeholder="10th, ABC Colony..." required></textarea>
+        <br><br>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" required maxlength="6" pattern="\d{6}"
+            title="Please enter a 6-digit pincode." placeholder="636701"><br><br>
+
+        <label for="studentMobile">Student's Mobile Number:</label>
+        <input type="tel" id="studentMobile" name="studentMobile" pattern="[0-9]{10}" placeholder="9876543210" required>
+        <br><br>
+
+        <label for="parentMobile">Parent's Mobile Number:</label>
+        <input type="tel" id="parentMobile" name="parentMobile" pattern="[0-9]{10}" placeholder="9876543210" required>
+        <br><br>
+
+        <label for="parentEmail">Parent's Email ID:</label>
+        <input type="email" id="parentEmail" name="parentEmail" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required
+            placeholder="abc@gmail.com">
+        <br><br>
+
+        <label for="studentEmail">Student's Email ID:</label>
+        <input type="email" id="studentEmail" name="studentEmail" required pattern="[a-zA-Z0-9._%+-]+@gmail.com"
+            placeholder="abc1@gmail.com" title="Please enter a valid Gmail.">
+        <br><br>
+
+        <!-- Additional Details -->
+        <label class="section-heading">Additional Details</label>
+
+        <label for="hostelAccommodation">Do you need hostel accommodation?</label>
+        <select id="hostelAccommodation" name="hostelAccommodation" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br><br>
+
+        <label for="collegeBus">Do you like to travel to our college by college bus?</label>
+        <select id="collegeBus" name="collegeBus" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="agreement" name="agreement" value="agree" required>
+            <label for="agreement">
+                I promise to abide by the rules and regulations of the college explained in the academic calendar.
+                All the particulars stated in the application form are true to the best of my knowledge and belief.
+            </label>
+        </div><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init(''); // Your EmailJS user ID
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Gather personal information
+            const nameEnglish = document.getElementById("name_english").value || '';
+            const nameTamil = document.getElementById("name_tamil").value || '';
+            const courseApplied = document.getElementById("course_applied").value || '';
+            const dob = document.getElementById("dob").value || '';
+            const gender = document.getElementById("gender").value || '';
+            const bloodGroup = document.getElementById("blood_group").value || '';
+            const community = document.getElementById("community").value || '';
+            const religion = document.getElementById("religion").value || '';
+            const dalitCatholic = document.getElementById("dalit_catholic").value || '';
+            const nationality = document.getElementById("nationality").value || '';
+            const motherTongue = document.getElementById("mother_tongue").value || '';
+            const differentlyAbled = document.getElementById("differently_abled").value || '';
+
+            // Gather parent/guardian information
+            const fatherName = document.getElementById("father_name").value || '';
+            const fatherEducation = document.getElementById("father_education").value || '';
+            const fatherOccupation = document.getElementById("father_occupation").value || '';
+            const fatherIncome = document.getElementById("father_income").value || '';
+
+            const motherName = document.getElementById("mother_name").value || '';
+            const motherEducation = document.getElementById("mother_education").value || '';
+            const motherOccupation = document.getElementById("mother_occupation").value || '';
+            const motherIncome = document.getElementById("mother_income").value || '';
+
+            // Gather academic details
+            const firstGraduate = document.getElementById("first_graduate").value || '';
+            const mediumOfInstruction = document.getElementById("medium_of_instruction").value || '';
+            const schoolLastStudied = document.getElementById("school_last_studied").value || '';
+            const boardExamination = document.getElementById("boardExamination").value || '';
+            const yearOfPassing = document.getElementById("yearOfPassing").value || '';
+            const examRegNo = document.getElementById("examRegNo").value || '';
+            const language1Marks = document.getElementById("language1").value || '';
+            const language2Marks = document.getElementById("language2").value || '';
+            const subject1Marks = document.getElementById("subject1").value || '';
+            const subject2Marks = document.getElementById("subject2").value || '';
+            const subject3Marks = document.getElementById("subject3").value || '';
+            const subject4Marks = document.getElementById("subject4").value || '';
+            const totalMarks = document.getElementById("totalMarks").value || '';
+
+            // Gather contact details
+            const addressCommunication = document.getElementById("addressCommunication").value || '';
+            const pincode = document.getElementById("pincode").value || '';
+            const studentMobile = document.getElementById("studentMobile").value || '';
+            const parentMobile = document.getElementById("parentMobile").value || '';
+            const parentEmail = document.getElementById("parentEmail").value || '';
+            const studentEmail = document.getElementById("studentEmail").value || '';
+
+            // Validate email addresses
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(parentEmail)) {
+                alert('Please enter a valid email address for the parent.');
+                return;
+            }
+            if (!emailPattern.test(studentEmail)) {
+                alert('Please enter a valid email address for the student.');
+                return;
+            }
+
+            // Gather additional details
+            const hostelAccommodation = document.getElementById("hostelAccommodation").value || '';
+            const collegeBus = document.getElementById("collegeBus").value || '';
+
+            // Create a templateParams object
+            const templateParamsCollegeUser = {
+                name_english: nameEnglish,
+                name_tamil: nameTamil,
+                course_applied: courseApplied,
+                dob: dob,
+                gender: gender,
+                blood_group: bloodGroup,
+                community: community,
+                religion: religion,
+                dalit_catholic: dalitCatholic,
+                nationality: nationality,
+                mother_tongue: motherTongue,
+                differently_abled: differentlyAbled,
+
+                father_name: fatherName,
+                father_education: fatherEducation,
+                father_occupation: fatherOccupation,
+                father_income: fatherIncome,
+
+                mother_name: motherName,
+                mother_education: motherEducation,
+                mother_occupation: motherOccupation,
+                mother_income: motherIncome,
+
+                first_graduate: firstGraduate,
+                medium_of_instruction: mediumOfInstruction,
+                school_last_studied: schoolLastStudied,
+                board_examination: boardExamination,
+                year_of_passing: yearOfPassing,
+                exam_reg_no: examRegNo,
+                language1_marks: language1Marks,
+                language2_marks: language2Marks,
+                subject1_marks: subject1Marks,
+                subject2_marks: subject2Marks,
+                subject3_marks: subject3Marks,
+                subject4_marks: subject4Marks,
+                total_marks: totalMarks,
+
+                address_communication: addressCommunication,
+                pincode: pincode,
+                student_mobile: studentMobile,
+                parent_mobile: parentMobile,
+                parent_email: parentEmail,
+                student_email: studentEmail,
+
+                hostel_required: hostelAccommodation,
+                college_bus: collegeBus
+            };
+
+            // Send the email using EmailJS
+            emailjs.send('', '', templateParamsCollegeUser)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Form submitted successfully!');
+                })
+                .catch(function (error) {
+                    console.log('FAILED...', error);
+                    alert('Form submission failed. Please try again later.');
+                });
+            // Send the email to the user
+            emailjs.send('service_fxomadt', 'template_7ty1pq6', templateParamsCollegeUser)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Form submitted successfully! A confirmation email has been sent to you.');
+                })
+                .catch(function (error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send confirmation email. Please try again later.');
+                });
+        });
+    </script>
+</body>
+
+</html>
