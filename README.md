@@ -75,9 +75,6 @@ Steps to contribute:
    git push origin feature/your-feature
    ```
 5. Create a new Pull Request (this can be done through the GitHub web interface).
-```
-
-This should be a clear and updated guide for contributing to your project!
 
 ## License
 
