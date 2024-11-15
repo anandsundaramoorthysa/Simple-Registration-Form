@@ -62,15 +62,23 @@ Contributions are welcome! If you would like to contribute, feel free to open an
 
 Steps to contribute:
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Create a new Pull Request.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -am 'Add new feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Create a new Pull Request (this can be done through the GitHub web interface).
+```
+
+This should be a clear and updated guide for contributing to your project!
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This README file provides an organized overview of the project, installation steps, usage instructions, and how others can contribute. You can update the repository links, add any additional features, and adjust the contribution guidelines as needed.
