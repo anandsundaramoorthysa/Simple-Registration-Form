@@ -79,3 +79,8 @@ Steps to contribute:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/anandsundaramoorthysa/Simple-Registration-Form/blob/main/LICENSE.txt) file for details.
+
+## Contact
+
+For any inquiries or support regarding the Simple Registration Form project, feel free to reach out via email at [sanand03027005@gmail.com](mailto:sanand03027005@gmail.com?subject=Inquiry%20about%20Simple%20Registration%20Form%20Project) or connect with me on [LinkedIn](https://www.linkedin.com/in/anandsundaramoorthysa/).
+
